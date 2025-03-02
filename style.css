@@ -1,0 +1,153 @@
+/* 전체 페이지 스타일 */
+body {
+  font-family: 'Jua', sans-serif; /* 가독성 좋은 폰트 */
+  background: linear-gradient(to bottom, #a3d8f4, #eaf6ff); /* 청량한 하늘색 그라디언트 */
+  display: block; 
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  }
+  
+  /* 메인 컨테이너 */
+  .main-container {
+    display: flex;
+    flex-direction: column; /* ✅ 내부 요소를 세로 정렬 */
+    align-items: center; /* ✅ 가로 중앙 정렬 */
+    justify-content: center; /* ✅ 세로 중앙 정렬 */
+    min-height: 100vh;
+    padding-top: 40px; /* ✅ 위쪽 여백 추가 */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    margin-bottom: 40px; /* ✅ 추가 콘텐츠와 간격 조정 */
+}
+
+  
+  /* 제목 스타일 */
+  h1 {
+  font-size: 22px;
+  color: #0077cc;
+  margin-bottom: 15px;
+  }
+  
+  /* 라디오 버튼 그룹 */
+  .radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  }
+  
+  .radio-group label {
+  background: #eaf6ff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+  .radio-group input {
+  display: none; /* 기본 라디오 버튼 숨기기 */
+  }
+  
+  .radio-group input:checked + label {
+  background: #0077cc;
+  color: white;
+  font-weight: bold;
+  }
+  
+  /* 무작위 조합 옵션 */
+  #random-options {
+  background: #f4faff;
+  padding: 10px;
+  border-radius: 10px;
+  display: none; /* 기본 숨김 */
+  margin-bottom: 15px;
+  }
+  
+  #random-options label {
+  display: block;
+  margin: 5px 0;
+  }
+  
+  /* 버튼 스타일 */
+  button {
+  width: 100%;
+  padding: 12px;
+  background: #0077cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+  button:hover {
+  background: #005fa3;
+  }
+  
+  /* 닉네임 출력 영역 */
+  #nickname-output {
+  margin: 15px 0;
+  padding: 12px;
+  background: #f4faff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  }
+  
+  /* 복사하기 버튼 */
+  #copy-btn {
+  background: #ff6b6b;
+  }
+  
+  #copy-btn:hover {
+  background: #e65353;
+  }
+
+  .extra-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 40px auto; /* ✅ 위쪽 여백 추가 */
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#rare-nickname-btn {
+    background-color: #28a745; /* ✅ 초록색 버튼 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#rare-nickname-btn:hover {
+    background-color: #218838;
+}
+
+#rare-nickname-output {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    min-height: 40px; /* ✅ 추천 닉네임이 없을 때 높이 유지 */
+}
+
+  

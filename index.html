@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 닉네임 생성기</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+
+</head>
+    <body>
+        <div class="main-container">
+        <div class="container">
+            <h1>랜덤 닉네임 생성기</h1>
+
+            <!-- 닉네임 유형 선택 -->
+            <div class="radio-group">
+                <input type="radio" id="adj-noun" name="nickname-type" value="adj-noun" checked>
+                <label for="adj-noun">형용사 + 명사</label>
+                
+                <input type="radio" id="random" name="nickname-type" value="random">
+                <label for="random">무작위 조합</label>
+            </div>
+
+            <!-- 무작위 조합 옵션 -->
+            <div id="random-options">
+                <label>글자 수:
+                    <select id="char-length">
+                        <option value="2">2글자</option>
+                        <option value="3">3글자</option>
+                        <option value="4">4글자</option>
+                    </select>
+                </label>
+                <label><input type="checkbox" id="include-final-consonant"> 받침 포함</label>
+                <label><input type="checkbox" id="include-double-consonant"> 겹자음 포함</label>
+
+                <!-- ✅ 필수 단어 입력칸 추가 -->
+                <label>필수 단어:
+                    <input type="text" id="required-word" maxlength="4" placeholder="비워두시면 적용X">
+                </label>
+                
+                <!-- 오류 메시지 표시 -->
+                <p id="error-message" style="color: red; display: none;"></p>
+            </div>
+
+            <!-- 닉네임 생성 버튼 -->
+            <button id="generate-btn">닉네임 생성</button>
+
+            <!-- 닉네임 출력 영역 -->
+            <div id="nickname-output">여기에 닉네임이 표시됩니다</div>
+
+            <!-- 복사 버튼 -->
+            <button id="copy-btn">복사하기</button>
+        </div>
+        </div>
+
+        <!-- 레어 닉네임 추천 시스템 -->
+    <div class="extra-content">
+        <h2>레어 닉네임 추천</h2>
+        <p>버튼을 클릭하면 희귀한 닉네임 3개를 추천해드립니다!</p>
+
+        <!-- 레어 닉네임 추천 버튼 -->
+        <button id="rare-nickname-btn">레어 닉네임 추천</button>
+
+        <!-- 추천된 닉네임을 표시할 영역 -->
+        <div id="rare-nickname-output">여기에 추천 닉네임이 표시됩니다</div>
+    </div>
+
+        
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
