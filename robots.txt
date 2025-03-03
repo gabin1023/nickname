@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://gabin1023.github.io/sitemap.xml
 
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://gabin1023.github.io/sitemap.xml
 
 #DaumWebMasterTool:9f09707649578e0d7cb4a637746ced75f65bd4efbeae4b540d245eb1a3f4ed9e:I9CTHrW2Tchpy1NptrnWuQ==
